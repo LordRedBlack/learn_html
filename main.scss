@@ -1,0 +1,223 @@
+@use "sass:math";
+/* VARIABLE DEFINITIONS */
+
+$width: 80%;
+$project-item-width: 300px;
+
+/* CSS */
+
+@font-face {
+    font-family: Exo;
+    src: url(static/fonts/Exo-Regular.tff);
+}
+
+body {
+  margin: 0;
+  font-family: 'Exo', sans-serif;
+}
+
+div.header-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+div.header {
+  background-color: white;
+  height: 60px;
+  padding: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: 'Exo', sans-serif;
+  font-size: 1.3em;
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border */
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 2px;
+}
+
+div.title {
+  font-size: 1.2em;
+}
+
+a.nav-item {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: black;
+  padding: 5px;
+  /* The border */
+  border-style: solid;
+  border-color: white;
+  border-width: 0;
+  border-bottom-width: 2px;
+}
+
+a.nav-item:hover {
+  border-color: red;
+}
+
+a.nav-item:visited {
+  text-decoration: none;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+div.thumbnail {
+  width: 100%;
+  background-color: black;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+img.thumbnail {
+  position: relative;
+  width: $width;
+  margin-right: math.div(100% - $width, 2);
+  margin-left: math.div(100% - $width, 2);
+  z-index: 10;
+}
+
+img.thumbnail-background {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 60%;
+  filter: blur(10px);
+  margin-left: -100%;
+  margin-top: -10%;
+  z-index: 0;
+}
+
+div.infobox {
+  /* text */
+  font-size: 1.3em;
+  font-family: 'Exo', sans-serif;
+  color: white;
+  line-height: 1.7;
+  /* container */
+  background-color: #1B1B1B;
+  opacity: 95%;
+  position: absolute;
+  width: 25%;
+  margin-left: 55%; 
+  top: 15%;
+  padding: 20px;
+  padding-left: 30px;
+  z-index: 100;
+  /* border */
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 8px;
+  border-color: black;
+}
+
+div.infobox>p {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+div.navigation-container {
+
+}
+
+div#logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+div#logo>img {
+  width: 50px;
+  height: 50px;
+}
+
+a.nav-item {
+  margin-left: 20px;
+}
+
+div.content {
+  position: relative;
+  margin-right: math.div(100% - $width, 2);
+  margin-left: math.div(100% - $width, 2);
+  min-height: 300px;
+  padding: 30px;
+  font-size: 16px;
+  z-index: 10;
+}
+
+div.main {
+  z-index: 10;
+}
+
+div.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+div.footer-main {
+  width: $width;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-color: darkgray;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+div.project-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.project-item {
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  width: $project-item-width;
+  -webkit-box-shadow: 9px 10px 28px -13px rgba(0,0,0,0.75);
+  box-shadow: 9px 10px 28px -13px rgba(0,0,0,0.75);
+  /* text */
+  text-decoration: None;
+  color: black;
+  font-size: 1.2em;
+  font-family: 'Exo', sans-serif;
+}
+
+div.project-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+img.project-thumbnail {
+  width: 100%;
+}
