@@ -2,54 +2,69 @@
 <html>
   <head>
     <title>Hello From Linux</title>
-    <link type="text/css" rel="stylesheet" href="main.css"/>
+    <link type="text/css" rel="stylesheet" href="static/css/main.css"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
   </head>
 
   <body>
     <!-- HEADER -->
-    <div class="header">
-      <div class="title-container">
-        <div id="logo">
-
+    <div class="header-container">
+      <div class="header">
+        <a class="title-container" href="">
+          <div id="logo">
+            <img src="static/images/logo.png"/>
+          </div>
+          <div class="title">
+            Josua Teufel
+          </div>
+        </a>
+        <div class="navigation-container">
+          <a class="nav-item" href="">Home</a>
+          <a class="nav-item" href="about.html">About</a>
         </div>
-        <div class="title">
-          Josua Teufel
-        </div>
-      </div>
-      <div class="navigation-container">
-        <a class="nav-item" href="">
-          Home
-        </a>
-        <a class="nav-item" href="projects.html">
-          Projects
-        </a>
-        <a class="nav-item" href="about.html">
-          About
-        </a>
       </div>
     </div>
 
+
     <!-- THUMBNAIL -->
     <div class="thumbnail">
-
+      <img class="thumbnail" src="static/images/thumbnail.png"/>
+      <img class="thumbnail-background" src="static/images/thumbnail.png"/>
+      <div class="infobox">
+        <p>
+          Hello there! My name is <strong>Josua</strong>
+        </p>
+        <p>
+          I am a student from Germany and I like playing/making games!
+        </p>
+      </div>
     </div>
 
     <!-- CONTENT -->
     <div class="content">
       <div class="main">
-        <h1>Hi there, I am Josua</h1>
+        <h1>Projects</h1>
 
-        <p>
-          This is my website.
-        </p>
+        <div class="project-list">
+          <a class="project-item" href="">
+            <img class="project-thumbnail" src="static/images/zoop_icon.png"/>
+            <div class="project-description">
+              <strong>Zoop!</strong> is a simple wave shooter made with the
+              Unity Game Engine. All assets were made with Blender and GIMP.
+            </div>
+          </a>
+        </div>
 
       </div>
     </div>
 
     <!-- FOOTER -->
     <div class="footer">
-      Copyright Josua 2021
+      <div class="footer-main">
+        <div class="copyright">
+          &copy; Copyright 2021  Josua Teufel
+        </div>
+      </div>
     </div>
 
   </body>
