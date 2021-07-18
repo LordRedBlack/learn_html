@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  home.html
+{% endblock %}
+
+{% block main %}
+<!-- THUMBNAIL -->
+<div class="thumbnail">
+  <img class="thumbnail" src="static/images/thumbnail.png"/>
+  <img class="thumbnail-background" src="static/images/thumbnail.png"/>
+  <div class="infobox">
+    <p>
+      Hello there! My name is <strong>Josua</strong>
+    </p>
+    <p>
+      I am a student from Germany and I like playing/making games!
+    </p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+  <div class="main">
+    <h1>Projects</h1>
+
+    <div class="project-list">
+      <a class="project-item" href="">
+        <img class="project-thumbnail" src="static/images/zoop_icon.png"/>
+        <div class="project-description">
+          <strong>Zoop!</strong> is a simple wave shooter made with the
+          Unity Game Engine. All assets were made with Blender and GIMP.
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
